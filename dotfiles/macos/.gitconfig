@@ -1,0 +1,30 @@
+[core]
+	askpass = git-gui--askpass
+	editor = nano
+	pager = less -FRX
+[credential]
+	helper = osxkeychain
+[user]
+	email = aeioudev@outlook.com
+	name = aeiouaeiouaeiouaeiouaeiouaeiou
+	signingkey = 67D486317A51FABE
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[commit]
+	gpgsign = true
+[help]
+	autocorrect = 20
+[alias]
+	erase = reset --hard
+	justdoit = commit -a -v
+	history = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	goto = checkout
+	wassup = status --short --branch
+	makemagic = !git fetch --all --prune --verbose && git checkout master && git pull --verbose && git reset --hard upstream/master && git push --force --verbose
+	overall = !git remote --verbose && git branch --all --verbose
+	putback = reset --soft "HEAD^"
+[color]
+	ui = always

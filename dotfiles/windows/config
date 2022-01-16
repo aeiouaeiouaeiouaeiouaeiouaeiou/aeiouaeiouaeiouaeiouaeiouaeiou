@@ -1,0 +1,6 @@
+Host *
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_ed25519
+
+Host 127.0.0.*
+  HostKeyAlgorithms=+ssh-dss
