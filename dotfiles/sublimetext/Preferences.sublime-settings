@@ -1,0 +1,13 @@
+{
+	"color_scheme": "GitHub Dark.sublime-color-scheme",
+	"font_face": "JetBrains Mono Regular",
+	"font_size": 10,
+	"line_padding_bottom": 1.2,
+	"line_padding_top": 1.2,
+	"theme": "GitHub Dark.sublime-theme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
+}
